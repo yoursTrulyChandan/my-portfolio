@@ -130,6 +130,7 @@ const Modal: React.FC<ModalProps> = ({
                 onClick={handleSubmit}
                 />
                 {footer}
+                {/* Testing access to github */}
             </div>
           </div>
         </div>
