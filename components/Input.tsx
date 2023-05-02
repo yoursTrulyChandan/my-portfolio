@@ -2,21 +2,21 @@ interface InputProps {
   placeholder?: string;
   value?: string;
   type?: string;
-  disable?: boolean;
-  onChange: (event: React.ChangEvent<HTMLInputElement>) => void;
+  disabled?: boolean;
+  onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
 const Input: React.FC<InputProps> = ({
   placeholder,
   value,
   type,
-  disable,
+  disabled,
   onChange,
 }) => {
   return (
     <input
-      disable={disabled}
-      onChange={onchange}
+      disabled={disabled}
+      onChange={onChange}
       value={value}
       placeholder={placeholder}
       type={type}
